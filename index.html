@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitform Sta Op Stoelen | Tijdelijk 10% Korting</title>
+    <meta name="description" content="Ontdek onze premium Fitform sta op stoelen met 10% korting. Comfort en kwaliteit gegarandeerd.">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="font-sans antialiased text-gray-900 bg-white">
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50" x-data="{ isOpen: false }">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="text-2xl font-bold text-gray-800">Fitform</a>
+                
+                <button @click="isOpen = !isOpen" class="lg:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+
+                <div class="hidden lg:flex space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Kenmerken</a>
+                    <a href="#benefits" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Voordelen</a>
+                    <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">FAQ</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+
+            <div x-show="isOpen" class="lg:hidden mt-4" x-transition>
+                <div class="flex flex-col space-y-4">
+                    <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Kenmerken</a>
+                    <a href="#benefits" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Voordelen</a>
+                    <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">FAQ</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-gray-100 overflow-hidden">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10">
+                <div class="text-center max-w-4xl mx-auto">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+                        Fitform Sta Op Stoelen
+                        <span class="block text-blue-600 mt-2">Tijdelijk 10% Korting</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-12 leading-relaxed">
+                        Ervaar ultiem comfort met onze premium sta-op stoelen. Nog maar enkele dagen beschikbaar met 10% korting!
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a href="https://sta-opstoelen.nl" class="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                            Bekijk Aanbod
+                        </a>
+                        <a href="#features" class="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-blue-600 bg-white rounded-full hover:bg-gray-50 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                            Meer Informatie
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="absolute inset-0 z-0 opacity-20">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-200 to-purple-200 transform -skew-y-12"></div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">Unieke Kenmerken</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Ergonomisch Design</h3>
+                        <p class="text-gray-600">Perfect aangepast aan uw lichaam voor optimaal comfort</p>
+                    </div>
+
+                    <div class="p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Elektrische Bediening</h3>
+                        <p class="text-gray-600">Soepele en stille motoren voor maximaal gebruiksgemak</p>
+                    </div>
+
+                    <div class="p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">5 Jaar Garantie</h3>
+                        <p class="text-gray-600">Zekerheid en kwaliteit gegarandeerd</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="benefits" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">Voordelen</h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="flex items-start space-x-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Verbeterde Mobiliteit</h3>
+                            <p class="text-gray-600">Sta moeiteloos op en ga comfortabel zitten zonder hulp van anderen</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Direct Leverbaar</h3>
+                            <p class="text-gray-600">Binnen 2 weken geleverd en geïnstalleerd bij u thuis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-24 bg-white" x-data="{ selected: null }">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">Veelgestelde Vragen</h2>
+                
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <div class="border rounded-lg">
+                        <button @click="selected !== 1 ? selected = 1 : selected = null" class="flex justify-between items-center w-full px-6 py-4 text-left">
+                            <span class="text-lg font-medium">Wat is de levertijd?</span>
+                            <svg class="w-6 h-6 transform transition-transform duration-200" :class="{'rotate-180': selected === 1}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div x-show="selected === 1" class="px-6 pb-4">
+                            <p class="text-gray-600">Onze sta-op stoelen worden binnen 2 weken bij u thuis geleverd en geïnstalleerd.</p>
+                        </div>
+                    </div>
+
+                    <div class="border rounded-lg">
+                        <button @click="selected !== 2 ? selected = 2 : selected = null" class="flex justify-between items-center w-full px-6 py-4 text-left">
+                            <span class="text-lg font-medium">Hoe lang is de garantie?</span>
+                            <svg class="w-6 h-6 transform transition-transform duration-200" :class="{'rotate-180': selected === 2}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div x-show="selected === 2" class="px-6 pb-4">
+                            <p class="text-gray-600">U krijgt 5 jaar volledige garantie op alle onderdelen en functionaliteit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-24 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-8">Profiteer Nu van 10% Korting</h2>
+                <p class="text-xl mb-12 opacity-90">Deze aanbieding is nog maar kort geldig!</p>
+                <a href="https://sta-opstoelen.nl" class="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-blue-600 bg-white rounded-full hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    Bekijk de Collectie
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <p class="mb-2">support@example.com</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-400 transition-colors duration-300">Over ons</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors duration-300">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Juridisch</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors duration-300">Algemene Voorwaarden</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Volg ons</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-400 transition-colors duration-300">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.77,7.46H14.5v-1.9c0-.9.6-1.1,1-1.1h3V.5L14.77.5C10.47.5,10,3.86,10,5.42v2H8v4h2v12h5V11.46h3.77Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center">
+                <p>&copy; 2024 Fitform Sta Op Stoelen. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
